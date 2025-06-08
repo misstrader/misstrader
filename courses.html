@@ -1,0 +1,234 @@
+/* CSS کامل و استاندارد برای طراحی ساده و شیک سایت */
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'IranYekan', Tahoma, sans-serif;
+}
+body {
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+  direction: rtl;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+header {
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.lang-switch {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-login {
+  background: #fff;
+  color: #000;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 15px;
+  cursor: pointer;
+  border: none;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  align-items: center;
+  gap: 40px;
+  background: #f9f9f9;
+}
+.hero-text {
+  flex: 1 1 400px;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+.btn-cta {
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-cta:hover {
+  background: #444;
+}
+.hero-img {
+  flex: 1 1 400px;
+  text-align: center;
+}
+.hero-img img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.courses {
+  padding: 50px 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+.courses h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 25px;
+}
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.course-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.course-content {
+  padding: 15px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.course-instructor {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+.course-price {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+.btn-enroll {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-start;
+  transition: background 0.3s ease;
+}
+.btn-enroll:hover {
+  background: #444;
+}
+footer {
+  background: #000;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contact-form button {
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background: #444;
+}
+@media(max-width:768px) {
+  .hero {
+    flex-direction: column;
+  }
+  header {
+    justify-content: center;
+    gap: 15px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}
